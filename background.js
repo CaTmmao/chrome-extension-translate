@@ -1,5 +1,6 @@
 //该文件相当于插件的后台，时刻在运行
-//该页面做到两个功能： 1.当用户在页面上选择了文字并鼠标右键后，会有该插件的一个菜单选项；2.点击该菜单选项，跳转到一个新标签页，内容是百度翻译刚才选中的文本
+//下面的代码做了两个功能： 1.当用户在页面上选择了文字并鼠标右键后，会有该插件的一个菜单选项；
+// 2.点击该菜单选项，跳转到一个新标签页，内容是百度翻译刚才选中的文本
 
 chrome.runtime.onInstalled.addListener(function() {
 //创建一个chrome的 menu（在页面上右键时出现的菜单）
@@ -12,7 +13,7 @@ chrome.runtime.onInstalled.addListener(function() {
     });
 });
 
-//菜单被点击时触发该事件
+//监听他的点击事件,当菜单被点击时触发该事件
 chrome.contextMenus.onClicked.addListener(function(info) {
     //如果 id === ↑创建的菜单的id
     if (info.menuItemId === 'translateMenu') {

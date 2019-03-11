@@ -1,0 +1,29 @@
+<!--该文件的作用：用户在浏览器的菜单上点击插件按钮后会弹出一个小框，小框里的HTML内容就是该文件的代码-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            width: 160px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>是否开启划词翻译</p>
+    <select id="select">
+        <option value="on">开启</option>
+        <option value="off" selected>关闭</option>
+    </select>
+    <!--点击该链接，跳转到【扩展程序选项】页面(从新的标签页打开)-->
+    <p><a target="_blank" href="chrome-extension://jllpopkjppjffkcppibkbcanfeljcfih/options.html">设置</a></p>
+</div>
+<!--加载一个js 需要和content-script进行交互传递信息,比如用户选择关闭划词翻译,那么在页面上就不显示翻译面板-->
+<script src="popup.js"></script>
+</body>
+</html>
