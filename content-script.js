@@ -152,8 +152,10 @@ chrome.storage.sync.get(['switch'], function (result) {
 chrome.runtime.onMessage.addListener(
     function (request) {
         // 如果有传 'switch' (当选项[开启]/[关闭]发生改变时,popup.js都会给当前活动标签页传递switch数据,也就是用户选择的选项是什么)
+        console.log(request);
         if (request.switch) {
             //把用户修改的选项的值赋值给该变量
+
             selectState = request.switch
         }
     });

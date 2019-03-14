@@ -33,10 +33,17 @@
             background: #001529;
             width: 100vw;
             height: 64px;
-            font-size: 22px;
             padding-left: 20px;
             color: #fff;
             line-height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .nav span:first-child {
+            font-size: 22px;
+            margin-right: 20px;
         }
 
         .title {
@@ -91,7 +98,10 @@
     </style>
 </head>
 <body>
-<div class="nav">语言设置</div>
+<div class="nav">
+    <span>语言设置</span>
+    <span>请选择您需要的语言，选择后系统将自动保存</span>
+</div>
 <div class="container">
     <div class="from">
         <h4 class="title">From</h4>
