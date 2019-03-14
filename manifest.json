@@ -1,7 +1,7 @@
 {
   "name": "yj-translate",
   "version": "0.1",
-  "description": "这是一个chrome翻译插件",
+  "description": "支持网页划词翻译；网页右键跳转到百度翻译；支持多语言翻译",
   "manifest_version": 2,
   "icons": {
     "16": "images/get_started16.png",
