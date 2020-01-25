@@ -4,7 +4,7 @@
 代码中写了详细的注释，方便以后查看，可以通过这个简单的小作品对谷歌插件有个大概的了解。
 
 ### 笔记：
-我把写这个插件的每一个步骤记在了[博客](http://blog.leanote.com/post/catmmao@gmail.com/%E5%86%99%E4%B8%80%E4%B8%AAchrome%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6)中
+我把写这个插件的每一个步骤记在了[博客](https://segmentfault.com/a/1190000021553960)中
 
 ### 谷歌插件文档：
 [谷歌插件官方文档](https://developer.chrome.com/extensions)
